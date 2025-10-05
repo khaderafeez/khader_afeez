@@ -59,6 +59,7 @@ export const Education = () => {
                 <p className="text-muted-foreground mb-4">2018 - 2020</p>
                 <div className="space-y-2">
                   <div className="mt-4">
+                    <p className="font-semibold mb-2">Relevant Coursework:</p>
                     <p className="text-muted-foreground">
                       Built a strong foundational knowledge in core scientific principles, including Physics, Chemistry, and Mathematics.
                     </p>
