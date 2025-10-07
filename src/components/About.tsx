@@ -2,6 +2,15 @@ import { Code, Cpu, Zap, Lightbulb, Rocket, Users } from 'lucide-react';
 import { Card } from '@/components/ui/card';
 import profileImage from '@/assets/profile-hero.jpg';
 
+import comedPic from '../aboutgallery/comed(pic).JPG';
+import finalPitch from '../aboutgallery/finalpitch.jpg';
+import smitWorkshop from '../aboutgallery/smit_workshop.jpg';
+import stagePic from '../aboutgallery/stage.jpg';
+import workshopPic from '../aboutgallery/workshop.jpg';
+import yitIncubation from '../aboutgallery/yenepoyaincubation.jpg';
+import ytrPic from '../aboutgallery/ytrpic.jpg';
+import yenepoyaIncubation2 from '../aboutgallery/yenepoya incubation.jpg';
+
 const interests = [
   { icon: Cpu, title: 'Embedded Systems', description: 'Microcontrollers & Real-time OS' },
   { icon: Zap, title: 'IoT Solutions', description: 'Connected devices & protocols' },
@@ -12,12 +21,14 @@ const interests = [
 ];
 
 const galleryImages = [
-  { id: 1, src: 'https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=400', alt: 'Working on embedded project' },
-  { id: 2, src: 'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=400', alt: 'PCB design workstation' },
-  { id: 3, src: 'https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=400', alt: 'Robotics development' },
-  { id: 4, src: 'https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=400', alt: 'IoT project setup' },
-  { id: 5, src: 'https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=400', alt: 'Technical workshop' },
-  { id: 6, src: 'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=400', alt: 'Hardware prototyping' },
+  { id: 1, src: comedPic, alt: 'Working on embedded project' },
+  { id: 2, src: smitWorkshop, alt: 'Workshop at SMIT' },
+  { id: 3, src: stagePic, alt: 'Presenting on stage' },
+  { id: 4, src: finalPitch, alt: 'Final pitch presentation' },
+  { id: 5, src: workshopPic, alt: 'Group photo at a workshop' },
+  { id: 6, src: yitIncubation, alt: 'Yenepoya Incubation Center event' },
+  { id: 7, src: ytrPic, alt: 'Yenepoya Robotics Club photo' },
+  { id: 8, src: yenepoyaIncubation2, alt: 'Yenepoya Incubation event' },
 ];
 
 export const About = () => {
