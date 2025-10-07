@@ -1,11 +1,24 @@
 import { GraduationCap, Users, Trophy } from 'lucide-react';
 import { Card } from '@/components/ui/card';
 
+import areana from '../Educationgallery/areana.jpg';
+import linefollower from '../Educationgallery/linefollower.jpg';
+import practiceMatch from '../Educationgallery/practice-match.jpg';
+import superboat from '../Educationgallery/superboat.jpg';
+import winnerJncc from '../Educationgallery/winner-jncc.jpg';
+import winnersCodemeet from '../Educationgallery/winners-codemeet.jpg';
+import winnersSMVITM from '../Educationgallery/winners-SMVITM.jpg';
+import winningMoment from '../Educationgallery/winning_moment_.jpg';
+
 const extracurricularImages = [
-  { id: 1, src: 'https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=400', alt: 'Robotics Team at Work' },
-  { id: 2, src: 'https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=400', alt: 'Award Ceremony' },
-  { id: 3, src: 'https://images.unsplash.com/photo-1531482615713-2afd69097998?w=400', alt: 'Team Collaboration' },
-  { id: 4, src: 'https://images.unsplash.com/photo-1552664730-d307ca884978?w=400', alt: 'Competition Day' },
+  { id: 1, src: winningMoment, alt: 'Winning moment with the team' },
+  { id: 2, src: winnersSMVITM, alt: 'Winners at SMVITM' },
+  { id: 3, src: winnersCodemeet, alt: 'Winners at Codemeet' },
+  { id: 4, src: winnerJncc, alt: 'Winner at JNCC' },
+  { id: 5, src: superboat, alt: 'Superboat robotics competition' },
+  { id: 6, src: practiceMatch, alt: 'Practice match with robots' },
+  { id: 7, src: linefollower, alt: 'Line follower robot on the track' },
+  { id: 8, src: areana, alt: 'Robotics competition arena' },
 ];
 
 export const Education = () => {
@@ -108,7 +121,7 @@ export const Education = () => {
           {/* Team Gallery */}
           <div>
             <h4 className="text-xl font-bold text-center mb-6">Team Work & Awards</h4>
-            <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6">
               {extracurricularImages.map((image, index) => (
                 <div
                   key={image.id}
