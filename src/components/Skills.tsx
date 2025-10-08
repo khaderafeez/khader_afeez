@@ -50,13 +50,38 @@ const skillCategories = [
   },
 ];
 
+import azureCert from '../cerfication/microsoft-certified-azure-ai-fundamentals.png';
+import pcbCert from '../cerfication/KHADER-AFEEZ-ADDUR-Participant-Certificate (1)_page-0001.jpg';
+import iotCert from '../cerfication/KHADER-AFEEZ-ADDUR-Participant-Certificate (2)_page-0001.jpg';
+import roboticsCert from '../cerfication/KHADER-AFEEZ-ADDUR-Participant-Certificate (3)_page-0001.jpg';
+import hackathonCert from '../cerfication/cibip_healtcare_hackthon.jpg';
+
 const certifications = [
-  { id: 1, name: 'AWS Certified Developer', year: '2024' },
-  { id: 2, name: 'Embedded Systems Certificate', year: '2023' },
-  { id: 3, name: 'IoT Specialization', year: '2023' },
-  { id: 4, name: 'PCB Design Professional', year: '2022' },
-  { id: 5, name: 'Advanced Robotics', year: '2022' },
-  { id: 6, name: 'Full Stack Development', year: '2023' },
+  {
+    id: 1,
+    name: 'Microsoft Certified: Azure AI Fundamentals',
+    year: '2024',
+    image: azureCert,
+  },
+  {
+    id: 2,
+    name: 'Cerfiaction in Java Programming ',
+    year: '2023',
+    image: pcbCert,
+  },
+  {
+    id: 3,
+    name: 'Certifactaion in python',
+    year: '2023',
+    image: iotCert,
+  },
+  {
+    id: 4,
+    name: 'Cerfication in Arduino',
+    year: '2023',
+    image: roboticsCert,
+  },
+  { id: 5, name: 'CIBIP Healthcare Hackathon', year: '2024', image: hackathonCert },
 ];
 
 export const Skills = () => {
@@ -116,8 +141,12 @@ export const Skills = () => {
                 style={{ animationDelay: `${index * 100}ms` }}
               >
                 <div className="flex flex-col items-center text-center space-y-3">
-                  <div className="w-full h-32 bg-gradient-to-br from-primary/20 to-secondary/20 rounded-lg flex items-center justify-center group-hover:from-primary/30 group-hover:to-secondary/30 transition-colors">
-                    <Award className="h-16 w-16 text-primary" />
+                  <div className="w-full h-40 rounded-lg flex items-center justify-center overflow-hidden border">
+                    <img
+                      src={cert.image}
+                      alt={cert.name}
+                      className="w-full h-full object-contain transition-transform duration-300 group-hover:scale-105"
+                    />
                   </div>
                   <div>
                     <h4 className="font-bold text-lg">{cert.name}</h4>

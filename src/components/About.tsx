@@ -10,6 +10,7 @@ import workshopPic from '../aboutgallery/workshop.jpg';
 import yitIncubation from '../aboutgallery/yenepoyaincubation.jpg';
 import ytrPic from '../aboutgallery/ytrpic.jpg';
 import yenepoyaIncubation2 from '../aboutgallery/yenepoya incubation.jpg';
+import workshopTesting from '../aboutgallery/workshoptesting.jpg';
 
 const interests = [
   { icon: Cpu, title: 'Embedded Systems', description: 'Microcontrollers & Real-time OS' },
@@ -29,6 +30,7 @@ const galleryImages = [
   { id: 6, src: yitIncubation, alt: 'Yenepoya Incubation Center event' },
   { id: 7, src: ytrPic, alt: 'Yenepoya Robotics Club photo' },
   { id: 8, src: yenepoyaIncubation2, alt: 'Yenepoya Incubation event' },
+  { id: 9, src: workshopTesting, alt: 'Testing during a workshop' },
 ];
 
 export const About = () => {

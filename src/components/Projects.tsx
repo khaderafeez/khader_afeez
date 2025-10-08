@@ -92,44 +92,68 @@ const projects = [
   },
 ];
 
+import weldingWork from '../behindscence/wleddingwork.jpg';
+import rcRace from '../behindscence/rcrace.jpg';
+import pitchingPreparation from '../behindscence/pitchingprepation.jpg';
+import medicalProject from '../behindscence/mediaclproject.jpg';
+import iotDebugging from '../behindscence/iotprojectdebbugging.jpg';
+import fixingBug from '../behindscence/fixingbug.jpg';
+import figuringCircuit from '../behindscence/figuringmissingcicuite.jpg';
+import conceptExplanation from '../behindscence/coceptexplnation.jpg';
+
+import emergeAward from '../awards/Emerge2024.jpg';
+import ieiAward from '../awards/iei.jpg';
+import ijrarAward from '../awards/IJRQAR.jpg';
+import ktechAward from '../awards/k-tech.jpg';
+import technocraftAward from '../awards/technocraft.jpg';
+
 const awardsData = [
   {
-    title: 'National Robotics Championship',
-    award: 'First Place',
+    title: 'K-Tech Sponsorship',
+    award: '₹ 1.25 Lakhs Grant',
+    year: '2024',
+    description: 'Secured sponsorship from Karnataka Innovation and Technology Society (KITS) for our final year project.',
+    image: ktechAward,
+  },
+  {
+    title: 'Emerge Ideathon 2024',
+    award: 'First Runner-Up',
+    year: '2024',
+    description: 'Achieved first runner-up in a competitive startup event, showcasing innovation and problem-solving skills.',
+    image: emergeAward,
+  },
+  {
+    title: 'Research Paper Publication',
+    award: 'Published in IJRAR',
+    year: '2024',
+    description: 'Published a paper on a smart interactive device for students with ASD in an international, peer-reviewed journal.',
+    image: ijrarAward,
+  },
+  {
+    title: 'ISTE Ideathon 2023',
+    award: 'Top 4 Finalist',
     year: '2023',
-    description: 'Led team to victory in autonomous navigation challenge',
-    image: 'https://images.unsplash.com/photo-1567427017947-545c5f8d16ad?w=400&h=300&fit=crop',
+    description: 'Recognized as one of the top four entries in a state-level competition for our idea in the Energy & Environment domain.',
+    image: ieiAward,
   },
   {
-    title: 'IEEE Innovation Contest',
-    award: 'Best Innovation',
+    title: 'Technocraft Booth Competition',
+    award: '3rd Place Winner',
     year: '2023',
-    description: 'Recognized for smart agriculture IoT solution',
-    image: 'https://images.unsplash.com/photo-1553028826-f4804a6dba3b?w=400&h=300&fit=crop',
-  },
-  {
-    title: 'Hackathon Nationals',
-    award: 'Winner',
-    year: '2022',
-    description: 'Built AI-powered delivery robot in 48 hours',
-    image: 'https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=400&h=300&fit=crop',
-  },
-  {
-    title: 'Engineering Excellence Award',
-    award: 'Gold Medal',
-    year: '2022',
-    description: 'Outstanding project in embedded systems',
-    image: 'https://images.unsplash.com/photo-1569025690938-a00729c9e1f9?w=400&h=300&fit=crop',
+    description: 'Awarded by COEP Alumni Association for our project "Prayascitta: A Sea Water Purification Model".',
+    image: technocraftAward,
   },
 ];
 
 const galleryImages = [
-  'https://images.unsplash.com/photo-1518770660439-4636190af475?w=400&h=300&fit=crop',
-  'https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=400&h=300&fit=crop',
-  'https://images.unsplash.com/photo-1573164713714-d95e436ab8d6?w=400&h=300&fit=crop',
-  'https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=400&h=300&fit=crop',
-  'https://images.unsplash.com/photo-1558002038-1055907df827?w=400&h=300&fit=crop',
-  'https://images.unsplash.com/photo-1592659762303-90081d34b277?w=400&h=300&fit=crop',
+  weldingWork,
+  rcRace,
+  pitchingPreparation,
+  medicalProject,
+  iotDebugging,
+  fixingBug,
+  figuringCircuit,
+  conceptExplanation,
 ];
 
 export const Projects = () => {
