@@ -9,12 +9,12 @@ const contactInfo = [
     value: 'khaderafeez16@gmail.com',
     href: 'mailto:khaderafeez16@gmail.com',
   },
-  {
+  /*{
     icon: Phone,
     label: 'Phone',
     value: '+91 81052 XXXXX',
     href: 'tel:+9181052XXXXX',
-  },
+  },*/
   {
     icon: MapPin,
     label: 'Location',
@@ -33,7 +33,7 @@ const socialLinks = [
   {
     icon: Linkedin,
     label: 'LinkedIn',
-    href: 'https://www.linkedin.com/in/khaderafeez',
+    href: 'www.linkedin.com/in/khaderafeez',
     color: 'hover:bg-blue-600 hover:text-white',
   },
   {

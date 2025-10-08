@@ -179,7 +179,7 @@ export const Projects = () => {
         </div>
 
         {/* Projects Grid */}
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8 mb-24">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project, index) => (
             <Card
               key={project.id}
@@ -258,6 +258,21 @@ export const Projects = () => {
             </Card>
           ))}
         </div>
+
+        {/* View More Button */}
+        <div className="text-center mt-12 mb-24 animate-fade-in">
+          <Button asChild size="lg" className="group">
+            <a
+              href="https://github.com/khaderafeez"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              View More on GitHub
+              <Github className="h-5 w-5 ml-2 group-hover:translate-x-1 transition-transform" />
+            </a>
+          </Button>
+        </div>
+
 
         {/* Awards Gallery */}
         <div className="mb-24 animate-fade-in">
