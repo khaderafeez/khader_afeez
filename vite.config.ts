@@ -16,5 +16,5 @@ export default defineConfig(({ mode }) => ({
     },
   },
   assetsInclude: ['**/*.JPG'],
-  base: '',
+  base: '/',
 }));

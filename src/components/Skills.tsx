@@ -60,7 +60,7 @@ const certifications = [
   {
     id: 1,
     name: 'Microsoft Certified: Azure AI Fundamentals',
-    year: '2024',
+    year: '2023',
     image: azureCert,
   },
   {
@@ -71,14 +71,14 @@ const certifications = [
   },
   {
     id: 3,
-    name: 'Certifactaion in python',
+    name: 'Certifactaion in Arduino',
     year: '2023',
     image: iotCert,
   },
   {
     id: 4,
-    name: 'Cerfication in Arduino',
-    year: '2023',
+    name: 'Cerfication in Python',
+    year: '2024',
     image: roboticsCert,
   },
   { id: 5, name: 'CIBIP Healthcare Hackathon', year: '2024', image: hackathonCert },

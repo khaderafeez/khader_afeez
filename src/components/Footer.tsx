@@ -9,7 +9,7 @@ export const Footer = () => {
         <div className="text-center space-y-4">
           <p className="text-sm flex items-center justify-center gap-2">
             Made with <Heart className="h-4 w-4 fill-red-500 text-red-500 animate-pulse" /> 
-            by Your Name
+            by Afeez
           </p>
           <p className="text-sm opacity-80">
             © {currentYear} All rights reserved.
