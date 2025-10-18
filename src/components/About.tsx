@@ -61,7 +61,7 @@ export const About = () => {
               Passionate Engineer & Innovator
             </h3>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              I'm Afeez, an Electronics & Communication Engineering graduate with over 1.5 years of professional experience, strengthened by multiple award-winning academic projects. I specialize in Embedded C, RTOS, and advanced PCB design, helping companies transform concepts into reliable, manufacturable embedded solutions.
+            Electronics & Communication Engineering graduate with 1.5 years of startup experience in embedded systems. Skilled in Embedded C, RTOS, and PCB design, with award-winning academic projects showcasing innovation and practical design expertise.
             </p>
             <p className="text-lg text-muted-foreground leading-relaxed">
               I bring a unique, holistic perspective to every project, bridging the gap between hardware and software. I am a firm believer in continuous learning and staying at the forefront of technological advancements.

@@ -55,7 +55,7 @@ export const Hero = () => {
             </div>
 
             <p className="text-lg text-muted-foreground max-w-lg">
-              Electronics & Communication Engineer passionate about hands-on innovation. I specialize in transforming concepts into real-world embedded solutions by blending expertise in PCB design, firmware development, and robotics. Let's build something amazing together.
+              Electronics & Communication Engineer passionate about hands-on innovation. I specialize in transforming concepts into real-world embedded solutions by blending expertise in PCB design, Embedded Systems, and Robotics. Let's build something amazing together.
             </p>
 
             {/* Social Links */}

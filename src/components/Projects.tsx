@@ -131,7 +131,7 @@ const awardsData = [
   },
   {
     title: 'ISTE Ideathon 2023',
-    award: 'Top 4 Finalist',
+    award: 'Winners',
     year: '2023',
     description: 'Recognized as one of the top four entries in a state-level competition for our idea in the Energy & Environment domain.',
     image: ieiAward,

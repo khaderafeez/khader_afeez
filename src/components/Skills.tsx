@@ -16,7 +16,7 @@ const skillCategories = [
   {
     icon: Code,
     title: 'Programming Languages',
-    skills: ['C', 'C++', 'Assembly'],
+    skills: ['C', 'C++', 'Assembly', 'Python'],
   },
   {
     icon: Cpu,
@@ -51,7 +51,6 @@ const skillCategories = [
 ];
 
 import azureCert from '../cerfication/microsoft-certified-azure-ai-fundamentals.png';
-import pcbCert from '../cerfication/KHADER-AFEEZ-ADDUR-Participant-Certificate (1)_page-0001.jpg';
 import iotCert from '../cerfication/KHADER-AFEEZ-ADDUR-Participant-Certificate (2)_page-0001.jpg';
 import roboticsCert from '../cerfication/KHADER-AFEEZ-ADDUR-Participant-Certificate (3)_page-0001.jpg';
 import hackathonCert from '../cerfication/cibip_healtcare_hackthon.jpg';
@@ -64,20 +63,14 @@ const certifications = [
     image: azureCert,
   },
   {
-    id: 2,
-    name: 'Cerfiaction in Java Programming ',
-    year: '2023',
-    image: pcbCert,
-  },
-  {
     id: 3,
-    name: 'Certifactaion in Arduino',
+    name: 'Certification in Arduino',
     year: '2023',
     image: iotCert,
   },
   {
     id: 4,
-    name: 'Cerfication in Python',
+    name: 'Certification in Python',
     year: '2024',
     image: roboticsCert,
   },

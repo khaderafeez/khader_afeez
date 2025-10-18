@@ -3,10 +3,11 @@ import { Card } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 
 const experiences = [
+  
   {
     company: 'Drift Pure Innovation Pvt. Ltd',
     role: 'Embedded Systems Lead',
-    duration: 'Nov 2024 - Present',
+    duration: 'Nov 2023 - Present',
     location: 'Mangalore, India',
     responsibilities: [
       'Led the end-to-end development of "HelioJal," a smart desalination system powered by 100% renewable energy, producing 10+ liters of potable water daily for remote communities',
@@ -29,6 +30,21 @@ const experiences = [
     ],
     technologies: ['KiCAD', 'TinkerCAD', 'Circuit Analysis', 'PCB Manufacturing', 'Git'],
   },
+
+  {
+    company: 'Freelance',
+    role: 'Social Media Manager ',
+    duration: '2022 - Present',
+    location: 'Remote',
+    responsibilities: [
+      'Developed and deployed a QR code-based food ordering system for Koyla Restaurant, streamlining their order management process.',
+      'Designed and built personalized websites for clients, delivering tailored web solutions to meet their specific needs.',
+      'Consulted on and assisted with the development of microcontroller-based projects, including custom PCB design and firmware implementation.',
+      'Provided social media management and digital marketing services for various small startups, enhancing their online presence.',
+    ],
+    technologies: [ 'Web Development', 'PCB Design', 'Embedded C', 'Social Media Marketing', 'Canva'],
+  },
+
 ];
 
 export const Experience = () => {
