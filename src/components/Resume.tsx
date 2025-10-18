@@ -21,7 +21,7 @@ export const Resume = () => {
               className="gap-2 hover-lift shadow-lg"
               asChild
             >
-              <a href="/resume.pdf" download>
+              <a href="/Khader_afeez.pdf" download>
                 <Download className="h-5 w-5" />
                 Download Resume
               </a>
@@ -31,25 +31,18 @@ export const Resume = () => {
           {/* PDF Viewer */}
           <div className="animate-fade-in" style={{ animationDelay: '200ms' }}>
             <div className="relative rounded-lg overflow-hidden shadow-2xl border bg-card">
-              {/* Fallback for PDF viewer */}
-              
-
-              {/* 
-                Uncomment this section when you have a resume.pdf file in the public folder:
-                
-                <iframe
-                  src="/resume.pdf"
-                  className="w-full h-[800px]"
-                  title="Resume PDF"
-                />
-              */}
+              <iframe
+                src="/Khader_afeez.pdf"
+                className="w-full h-[800px]"
+                title="Resume PDF"
+              />
             </div>
           </div>
 
           {/* Additional Info */}
           <div className="text-center mt-8 animate-fade-in" style={{ animationDelay: '400ms' }}>
             <p className="text-sm text-muted-foreground">
-              Last updated: June 2025 • Available in PDF format
+              Last updated: July 2025 • Available in PDF format
             </p>
           </div>
         </div>
