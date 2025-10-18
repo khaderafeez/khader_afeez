@@ -2,14 +2,14 @@ import { Code, Cpu, Zap, Lightbulb, Rocket, Users } from 'lucide-react';
 import { Card } from '@/components/ui/card';
 import profileImage from '@/assets/profile-hero.jpg';
 
-import comedPic from '../aboutgallery/comed(pic).jpg';
+import comedPic from '../aboutgallery/comed-pic.jpg';
 import finalPitch from '../aboutgallery/finalpitch.jpg';
 import smitWorkshop from '../aboutgallery/smit_workshop.jpg';
 import stagePic from '../aboutgallery/stage.jpg';
 import workshopPic from '../aboutgallery/workshop.jpg';
 import yitIncubation from '../aboutgallery/yenepoyaincubation.jpg';
 import ytrPic from '../aboutgallery/ytrpic.jpg';
-import yenepoyaIncubation2 from '../aboutgallery/yenepoya incubation.jpg';
+import yenepoyaIncubation2 from '../aboutgallery/yenepoya-incubation-2.jpg';
 import workshopTesting from '../aboutgallery/workshoptesting.jpg';
 
 const interests = [
