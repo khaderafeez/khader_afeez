@@ -1,6 +1,7 @@
-import { Mail, Phone, MapPin, Github, Linkedin, Instagram, Send } from 'lucide-react';
+import { Mail, Phone, MapPin, Github, Linkedin, Instagram, Send, CheckCircle, AlertCircle } from 'lucide-react';
 import { Card } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
+import { useState } from 'react';
 
 const contactInfo = [
   {
@@ -45,6 +46,57 @@ const socialLinks = [
 ];
 
 export const Contact = () => {
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    subject: '',
+    message: ''
+  });
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
+  const [errorMessage, setErrorMessage] = useState('');
+
+  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    const { name, value } = e.target;
+    setFormData(prev => ({
+      ...prev,
+      [name]: value
+    }));
+  };
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+    setSubmitStatus('idle');
+    setErrorMessage('');
+
+    try {
+      const formDataToSend = new FormData();
+      formDataToSend.append("access_key", "fb693b8f-591f-4c63-8874-f835efbe66ac");
+      formDataToSend.append("name", formData.name);
+      formDataToSend.append("email", formData.email);
+      formDataToSend.append("subject", formData.subject || `Message from ${formData.name}`);
+      formDataToSend.append("message", formData.message);
+
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        body: formDataToSend
+      });
+
+      if (response.ok) {
+        setSubmitStatus('success');
+        setFormData({ name: '', email: '', subject: '', message: '' });
+      } else {
+        throw new Error('Failed to send message');
+      }
+    } catch (error) {
+      setSubmitStatus('error');
+      setErrorMessage('Failed to send message. Please try again or contact me directly.');
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
+
   return (
     <section id="contact" className="section-padding bg-muted/30">
       <div className="container-custom">
@@ -123,21 +175,46 @@ export const Contact = () => {
               </Card>
             </div>
 
-            {/* Contact Form (Optional) */}
+            {/* Contact Form */}
             <div className="animate-fade-in-right">
               <Card className="p-8">
                 <h3 className="text-2xl font-bold mb-6">Send a Message</h3>
-                <form className="space-y-6">
+                
+                {/* Success Message */}
+                {submitStatus === 'success' && (
+                  <div className="mb-6 p-4 rounded-lg bg-green-50 border border-green-200 flex items-center gap-3">
+                    <CheckCircle className="h-5 w-5 text-green-600" />
+                    <p className="text-green-800 font-medium">
+                      Message sent successfully! I'll get back to you soon.
+                    </p>
+                  </div>
+                )}
+
+                {/* Error Message */}
+                {submitStatus === 'error' && (
+                  <div className="mb-6 p-4 rounded-lg bg-red-50 border border-red-200 flex items-center gap-3">
+                    <AlertCircle className="h-5 w-5 text-red-600" />
+                    <p className="text-red-800 font-medium">
+                      {errorMessage}
+                    </p>
+                  </div>
+                )}
+
+                <form onSubmit={handleSubmit} className="space-y-6">
                   <div>
                     <label
                       htmlFor="name"
                       className="block text-sm font-medium mb-2"
                     >
-                      Name
+                      Name *
                     </label>
                     <input
                       type="text"
                       id="name"
+                      name="name"
+                      value={formData.name}
+                      onChange={handleInputChange}
+                      required
                       className="w-full px-4 py-2 rounded-lg border bg-background focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all"
                       placeholder="Your name"
                     />
@@ -147,13 +224,34 @@ export const Contact = () => {
                       htmlFor="email"
                       className="block text-sm font-medium mb-2"
                     >
-                      Email
+                      Email *
                     </label>
                     <input
                       type="email"
                       id="email"
+                      name="email"
+                      value={formData.email}
+                      onChange={handleInputChange}
+                      required
                       className="w-full px-4 py-2 rounded-lg border bg-background focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all"
                       placeholder="your.email@example.com"
+                    />
+                  </div>
+                  <div>
+                    <label
+                      htmlFor="subject"
+                      className="block text-sm font-medium mb-2"
+                    >
+                      Subject
+                    </label>
+                    <input
+                      type="text"
+                      id="subject"
+                      name="subject"
+                      value={formData.subject}
+                      onChange={handleInputChange}
+                      className="w-full px-4 py-2 rounded-lg border bg-background focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all"
+                      placeholder="What's this about?"
                     />
                   </div>
                   <div>
@@ -161,10 +259,14 @@ export const Contact = () => {
                       htmlFor="message"
                       className="block text-sm font-medium mb-2"
                     >
-                      Message
+                      Message *
                     </label>
                     <textarea
                       id="message"
+                      name="message"
+                      value={formData.message}
+                      onChange={handleInputChange}
+                      required
                       rows={5}
                       className="w-full px-4 py-2 rounded-lg border bg-background focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all resize-none"
                       placeholder="Your message..."
@@ -174,9 +276,19 @@ export const Contact = () => {
                     type="submit"
                     size="lg"
                     className="w-full gap-2 hover-lift"
+                    disabled={isSubmitting}
                   >
-                    <Send className="h-5 w-5" />
-                    Send Message
+                    {isSubmitting ? (
+                      <>
+                        <div className="h-5 w-5 animate-spin rounded-full border-2 border-current border-t-transparent" />
+                        Sending...
+                      </>
+                    ) : (
+                      <>
+                        <Send className="h-5 w-5" />
+                        Send Message
+                      </>
+                    )}
                   </Button>
                 </form>
               </Card>
