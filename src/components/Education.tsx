@@ -52,6 +52,16 @@ export const Education = () => {
                       Embedded Systems, Digital Signal Processing, VLSI Design, Wireless Communication, Microwave Engineering, Analog & Digital Circuits
                     </p>
                   </div>
+                  <div className="mt-4">
+                    <p className="font-semibold mb-2">Achievements:</p>
+                    <ul className="list-disc list-inside space-y-1 text-muted-foreground">
+                      <li>Published a research paper on a smart interactive device for students with ASD in the IJRAR journal</li>
+                      <li>Achieved winner status at the ISTE Ideathon 2023</li>
+                      <li>Secured 3rd place in the Technocraft Booth Competition</li>
+                      <li>Recognized as winners at Yenmanthana 2024</li>
+                      <li>Ranked in the Top 50 for KPIT Sparkle</li>
+                    </ul>
+                  </div>
                 </div>
               </div>
             </div>
@@ -111,11 +121,6 @@ export const Education = () => {
                       <li>Spearheaded a 300% improvement in club performance, resulting in 4 first-place, 5 second-place, and 3 third-place awards</li>
                       <li>Competed at various inter-collegiate and national events</li>
                       <li>Successfully revitalized the club's technical capabilities and competitive standing</li>
-                      <li>Published a research paper on a smart interactive device for students with ASD in the IJRAR journal</li>
-                      <li>Achieved winner status at the ISTE Ideathon 2023</li>
-                      <li>Secured 3rd place in the Technocraft Booth Competition</li>
-                      <li>Recognized as winners at Yenmanthana 2024</li>
-                      <li>Ranked in the Top 50 for KPIT Sparkle</li>
                     </ul>
                   </div>
                 </div>
