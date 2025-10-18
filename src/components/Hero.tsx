@@ -92,7 +92,7 @@ export const Hero = () => {
           <div className="flex justify-center animate-fade-in-right">
             <div className="relative group">
               <div className="absolute inset-0 bg-gradient-to-br from-primary to-secondary rounded-full blur-2xl opacity-30 group-hover:opacity-50 transition-opacity" />
-              <img src={profileImage} alt="Professional Profile" className="relative w-72 h-72 md:w-96 md:h-96 rounded-full object-cover border-4 border-primary/20 shadow-2xl group-hover:scale-105 transition-transform duration-300" />
+              <img src={profileImage} alt="Khader Afeez - Embedded Systems and Robotics Engineer" className="relative w-72 h-72 md:w-96 md:h-96 rounded-full object-cover border-4 border-primary/20 shadow-2xl group-hover:scale-105 transition-transform duration-300" />
             </div>
           </div>
         </div>

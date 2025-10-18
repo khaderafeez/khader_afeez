@@ -373,7 +373,7 @@ export const Projects = () => {
                 >
                   <img
                     src={image}
-                    alt={`Workshop scene ${index + 1}`}
+                    alt={`Behind the scenes at Khader Afeez's workshop - Image ${index + 1}`}
                     className="w-80 h-60 object-cover hover:scale-105 transition-all duration-500 cursor-pointer"
                   />
                 </div>
