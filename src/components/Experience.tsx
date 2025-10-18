@@ -85,7 +85,7 @@ export const Experience = () => {
                             {exp.role}
                           </h3>
                           <p className="text-lg font-semibold text-primary mb-1">
-                            {exp.company}
+                            <strong>{exp.company}</strong>
                           </p>
                           <p className="text-sm text-muted-foreground">
                             {exp.duration}

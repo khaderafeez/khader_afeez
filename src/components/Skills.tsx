@@ -137,7 +137,7 @@ export const Skills = () => {
                   <div className="w-full h-40 rounded-lg flex items-center justify-center overflow-hidden border">
                     <img
                       src={cert.image}
-                      alt={cert.name}
+                      alt={`${cert.name} certification for Khader Afeez`}
                       className="w-full h-full object-contain transition-transform duration-300 group-hover:scale-105"
                     />
                   </div>

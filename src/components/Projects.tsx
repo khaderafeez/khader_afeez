@@ -313,7 +313,7 @@ export const Projects = () => {
                   <div className="relative h-48 overflow-hidden">
                     <img
                       src={award.image}
-                      alt={award.title}
+                      alt={`${award.title} award received by Khader Afeez - ${award.award}`}
                       className="w-full h-full object-cover"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-primary/90 to-transparent" />
