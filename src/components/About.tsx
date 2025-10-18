@@ -2,7 +2,7 @@ import { Code, Cpu, Zap, Lightbulb, Rocket, Users } from 'lucide-react';
 import { Card } from '@/components/ui/card';
 import profileImage from '@/assets/profile-hero.jpg';
 
-import comedPic from '../aboutgallery/comed(pic).JPG';
+import comedPic from '../aboutgallery/comed(pic).jpg';
 import finalPitch from '../aboutgallery/finalpitch.jpg';
 import smitWorkshop from '../aboutgallery/smit_workshop.jpg';
 import stagePic from '../aboutgallery/stage.jpg';
