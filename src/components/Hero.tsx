@@ -61,7 +61,7 @@ export const Hero = () => {
             {/* Social Links */}
             <div className="flex gap-4 pt-4">
               <Button size="icon" variant="outline" className="hover-lift hover:bg-primary hover:text-primary-foreground transition-all" asChild>
-                <a href="www.linkedin.com/in/khaderafeez" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.linkedin.com/in/khaderafeez/" target="_blank" rel="noopener noreferrer">
                   <Linkedin className="h-5 w-5" />
                 </a>
               </Button>
