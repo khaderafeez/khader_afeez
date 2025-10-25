@@ -58,48 +58,47 @@ export const Hero = () => {
           <div className="space-y-2">
             <p className="text-lg text-muted-foreground">Hello, I'm</p>
             <h1 className="text-5xl md:text-7xl font-bold gradient-text">Khader Afeez</h1>
-          </div>
+            {/* Typewriter effect */}
+            <div className="h-16 flex items-center">
+              <h2 className="text-2xl md:text-3xl font-semibold text-foreground">
+                <span className="inline-block min-w-[20px]">{displayedText}</span>
+                <span className="inline-block w-0.5 h-8 bg-primary ml-1 animate-blink" />
+              </h2>
+            </div>
 
-          {/* Typewriter effect */}
-          <div className="h-16 flex items-center">
-            <h2 className="text-2xl md:text-3xl font-semibold text-foreground">
-              <span className="inline-block min-w-[20px]">{displayedText}</span>
-              <span className="inline-block w-0.5 h-8 bg-primary ml-1 animate-blink" />
-            </h2>
-          </div>
+            <p className="text-lg text-muted-foreground max-w-lg">
+              Electronics & Communication Engineer passionate about hands-on innovation. I specialize in transforming concepts into real-world embedded solutions by blending expertise in PCB design, Embedded Systems, and Robotics. Let's build something amazing together.
+            </p>
 
-          <p className="text-lg text-muted-foreground max-w-lg">
-            Electronics & Communication Engineer passionate about hands-on innovation. I specialize in transforming concepts into real-world embedded solutions by blending expertise in PCB design, Embedded Systems, and Robotics. Let's build something amazing together.
-          </p>
+            {/* Social Links */}
+            <div className="flex gap-4 pt-4">
+              <Button size="icon" variant="outline" className="hover-lift hover:bg-primary hover:text-primary-foreground transition-all" asChild>
+                <a href="https://www.linkedin.com/in/khaderafeez/" target="_blank" rel="noopener noreferrer">
+                  <Linkedin className="h-5 w-5" />
+                </a>
+              </Button>
+              <Button size="icon" variant="outline" className="hover-lift hover:bg-primary hover:text-primary-foreground transition-all" asChild>
+                <a href="https://github.com/khaderafeez" target="_blank" rel="noopener noreferrer">
+                  <Github className="h-5 w-5" />
+                </a>
+              </Button>
+              <Button size="icon" variant="outline" className="hover-lift hover:bg-primary hover:text-primary-foreground transition-all" asChild>
+                <a href="https://www.instagram.com/khader_afeez" target="_blank" rel="noopener noreferrer">
+                  <Instagram className="h-5 w-5" />
+                </a>
+              </Button>
+            </div>
 
-          {/* Social Links */}
-          <div className="flex gap-4 pt-4">
-            <Button size="icon" variant="outline" className="hover-lift hover:bg-primary hover:text-primary-foreground transition-all" asChild>
-              <a href="https://www.linkedin.com/in/khaderafeez/" target="_blank" rel="noopener noreferrer">
-                <Linkedin className="h-5 w-5" />
-              </a>
-            </Button>
-            <Button size="icon" variant="outline" className="hover-lift hover:bg-primary hover:text-primary-foreground transition-all" asChild>
-              <a href="https://github.com/khaderafeez" target="_blank" rel="noopener noreferrer">
-                <Github className="h-5 w-5" />
-              </a>
-            </Button>
-            <Button size="icon" variant="outline" className="hover-lift hover:bg-primary hover:text-primary-foreground transition-all" asChild>
-              <a href="https://www.instagram.com/khader_afeez" target="_blank" rel="noopener noreferrer">
-                <Instagram className="h-5 w-5" />
-              </a>
-            </Button>
-          </div>
-
-          {/* CTA Buttons */}
-          <div className="flex gap-4 pt-4">
-            <Button size="lg" className="hover-lift" onClick={navigateToContact}>
-              Get In Touch
-            </Button>
-            <Button size="lg" variant="outline" className="hover-lift" onClick={navigateToProjects}>
-              View Projects
-            </Button>
-          </div>
+            {/* CTA Buttons */}
+            <div className="flex gap-4 pt-4">
+              <Button size="lg" className="hover-lift">
+                <a href="#contact">Get In Touch</a>
+              </Button>
+              <Button size="lg" variant="outline" className="hover-lift">
+                <a href="#projects">View Projects</a>
+              </Button>
+            </div>
+          </div>     
         </div>
 
         {/* Right side - Profile Image */}
@@ -112,8 +111,6 @@ export const Hero = () => {
       </div>
     </div>
 
-   
-
-
-  </section>;
+     
+    </section>;
 };
