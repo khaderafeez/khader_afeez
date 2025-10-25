@@ -34,7 +34,7 @@ const socialLinks = [
   {
     icon: Linkedin,
     label: 'LinkedIn',
-    href: 'www.linkedin.com/in/khaderafeez',
+    href: 'https://www.linkedin.com/in/khaderafeez/',
     color: 'hover:bg-blue-600 hover:text-white',
   },
   {
