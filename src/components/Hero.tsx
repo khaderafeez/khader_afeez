@@ -91,14 +91,14 @@ export const Hero = () => {
 
             {/* CTA Buttons */}
             <div className="flex gap-4 pt-4">
-              <Button size="lg" className="hover-lift">
-                <a href="#contact">Get In Touch</a>
+              <Button size="lg" className="hover-lift" onClick={navigateToContact}>
+                Get In Touch
               </Button>
-              <Button size="lg" variant="outline" className="hover-lift">
-                <a href="#projects">View Projects</a>
+              <Button size="lg" variant="outline" className="hover-lift" onClick={navigateToProjects}>
+                View Projects
               </Button>
             </div>
-          </div>     
+          </div>
         </div>
 
         {/* Right side - Profile Image */}
@@ -111,6 +111,6 @@ export const Hero = () => {
       </div>
     </div>
 
-     
-    </section>;
+
+  </section>;
 };
